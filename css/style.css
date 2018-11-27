@@ -1,3 +1,37 @@
+header {
+  height: 100%;
+  background-image: url("../images/bg.png");
+  background-position: top left;
+  background-size: contain;
+  background-repeat: repeat-x; }
+  header .container .row .col-lg-6 .text-center h1 {
+    font-size: 90px; }
 
+.navbar-brand {
+  padding: 31px 0;
+  height: auto; }
+
+.navbar-default {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  box-shadow: none; }
+
+.navbar-default .navbar-nav li a {
+  margin: 45px 29px 44px 0px;
+  text-align: center;
+  padding: 0 0 8px;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: solid 3px transparent;
+  color: #484c55; }
+
+.navbar-default .navbar-nav li a:hover {
+  text-align: center;
+  border-bottom: solid 3px #49cbcd;
+  width: 85px;
+  text-transform: none; }
+
+/***********************************/
 
 /*# sourceMappingURL=style.css.map */
