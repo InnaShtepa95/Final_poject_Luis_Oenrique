@@ -207,6 +207,11 @@ body {
         .container {
           .row {
             .col-md-12 {
+              &:nth-of-type(5) {
+
+                margin-bottom: 120px;
+
+              }
               h2 {
                 margin-top: 88px;
                 margin-bottom: 60px;
@@ -255,9 +260,59 @@ body {
         }
       }
     }
-    
+    .testimonials {
+      .container {
+        .row {
+          .col-md-12 {
+            h2 {
+              margin-top: 120px;
+              text-transform: uppercase;
+              font-size: 46px;
+              font-family: 'AsapBold';
+              &:before {
+                text-align: center;
+                content: "__";
+                clear: both;
+              }
 
+            }
+            .owl-carousel {
+
+
+              .info {
+box-sizing: border-box;
+                text-transform: uppercase;
+                max-width: 953px;
+                margin: auto;
+                border: solid 1px black;
+                .photo {
+                  float: left;
+                  margin-right: 30px;
+                }
+                .description {
+                  text-align: left;
+                  float: left;
+                  max-width: 590px;
+                  h3 {;
+                  }
+                  h6 {
+
+                  }
+                  p {
+                  }
+
+                }
+              }
+
+            }
+
+          }
+        }
+
+      }
+    }
   }
+
 }
 
 .navbar-brand {

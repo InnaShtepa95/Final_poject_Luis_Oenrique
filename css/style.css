@@ -112,6 +112,8 @@ body {
     margin-bottom: 125px; }
   body section .portfolio .container-fluid {
     background-color: #f6f6f6; }
+    body section .portfolio .container-fluid .container .row .col-md-12:nth-of-type(5) {
+      margin-bottom: 120px; }
     body section .portfolio .container-fluid .container .row .col-md-12 h2 {
       margin-top: 88px;
       margin-bottom: 60px;
@@ -142,6 +144,28 @@ body {
         box-shadow: 3px 2px 10px 3px #cacaca; }
     body section .portfolio .container-fluid .container .row .col-md-4 img {
       margin-bottom: 30px; }
+  body section .testimonials .container .row .col-md-12 h2 {
+    margin-top: 120px;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-family: 'AsapBold'; }
+    body section .testimonials .container .row .col-md-12 h2:before {
+      text-align: center;
+      content: "__";
+      clear: both; }
+  body section .testimonials .container .row .col-md-12 .owl-carousel .info {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    max-width: 953px;
+    margin: auto;
+    border: solid 1px black; }
+    body section .testimonials .container .row .col-md-12 .owl-carousel .info .photo {
+      float: left;
+      margin-right: 30px; }
+    body section .testimonials .container .row .col-md-12 .owl-carousel .info .description {
+      text-align: left;
+      float: left;
+      max-width: 590px; }
 
 .navbar-brand {
   padding: 31px 0;
