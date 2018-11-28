@@ -52,6 +52,7 @@ body {
       font-family: 'AsapBold'; }
       body section .container .row .col-md-6 h1:before {
         content: "__";
+        clear: both;
         margin-left: 5px; }
     body section .container .row .col-md-6 p {
       font-family: 'AsapRegular';
@@ -79,6 +80,24 @@ body {
     body section .container .row .col-md-6:nth-of-type(2) {
       margin-top: 110px;
       margin-bottom: 120px; }
+  body section .container-fluid {
+    background-color: #f6f6f6; }
+    body section .container-fluid .container .row .col-md-12 h2 {
+      margin-top: 120px;
+      text-transform: uppercase;
+      font-size: 46px;
+      font-family: 'AsapBold'; }
+      body section .container-fluid .container .row .col-md-12 h2:before {
+        text-align: center;
+        content: "__";
+        clear: both; }
+    body section .container-fluid .container .row .col-md-4 .service img {
+      margin-top: 70px; }
+    body section .container-fluid .container .row .col-md-4 .service h5 {
+      font-size: 24px;
+      font-family: 'AsapMedium'; }
+    body section .container-fluid .container .row .col-md-4:nth-of-type(2) {
+      margin-bottom: 100px; }
 
 .navbar-brand {
   padding: 31px 0;
