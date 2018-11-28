@@ -1,25 +1,119 @@
-header{
-  height: 100%;
-  background-image: url("../images/bg.png");
-  background-position: top left;
-  background-size:contain;
-  background-repeat: repeat-x;
-  .navbar .navbar-default{
-
-  }
-  .container{
-      .row{
-        .col-lg-6 .text-center{
-          h1{
-            font-size: 90px;
-          }
-        }
-      }
-  }
-
+@font-face {
+  font-family: 'AsapMedium';
+  src: url('../fonts/AsapMedium.eot');
+  src: url('../fonts/AsapMedium.eot') format('embedded-opentype'),
+  url('../fonts/AsapMedium.woff2') format('woff2'),
+  url('../fonts/AsapMedium.woff') format('woff'),
+  url('../fonts/AsapMedium.ttf') format('truetype'),
+  url('../fonts/AsapMedium.svg#AsapMedium') format('svg');
+}
+@font-face {
+  font-family: 'AsapBold';
+  src: url('../fonts/AsapBold.eot');
+  src: url('../fonts/AsapBold.eot') format('embedded-opentype'),
+  url('../fonts/AsapBold.woff2') format('woff2'),
+  url('../fonts/AsapBold.woff') format('woff'),
+  url('../fonts/AsapBold.ttf') format('truetype'),
+  url('../fonts/AsapBold.svg#AsapBold') format('svg');
 }
 
 
+
+
+body {
+  color: #4d4d4d;
+  header {
+
+    height: 100%;
+    background-image: url("../images/bg.png");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    .container {
+      .row {
+        .col-md-6 {
+
+          h1 {
+            margin-top: 150px;
+            font-size: 90px;
+            font-weight: bold;
+            font-family: 'AsapMedium';
+
+          }
+          h3 {
+            font-family: 'AsapMedium';
+            font-size: 22px;
+            margin-bottom: 30px;
+
+          }
+          a {
+
+            font-size: 16px;
+            line-height: 50px;
+            padding: 20px 35px 20px 30px;
+            border: solid 1px black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #4d4d4d;
+            &:nth-child(4) {
+              margin-left: 20px;
+              padding: 20px 46px;
+            }
+            &:hover {
+
+              border: solid 1px transparent;
+              font-weight: normal;
+              background-color: white;
+              -webkit-box-shadow: 3px 2px 10px 3px #cacaca;
+              box-shadow: 3px 2px 10px 3px #cacaca;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  section {
+    .container {
+      .row {
+        .col-md-6 {
+          h1{
+            font-size: 46px;
+            font-family: 'AsapBold';
+
+          }
+
+          a {
+
+            font-size: 16px;
+            line-height: 50px;
+            padding: 20px 35px 20px 30px;
+            border: solid 1px black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #4d4d4d;
+            &:nth-child(4) {
+              margin-left: 20px;
+              padding: 20px 46px;
+            }
+            &:hover {
+
+              border: solid 1px transparent;
+              font-weight: normal;
+              background-color: white;
+              -webkit-box-shadow: 3px 2px 10px 3px #cacaca;
+              box-shadow: 3px 2px 10px 3px #cacaca;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
 
 .navbar-brand {
   padding: 31px 0;
@@ -35,11 +129,12 @@ header{
 
 .navbar-default .navbar-nav {
   li {
-  //  width: 85px;
+    //display: inline-block;
+    //width: 19%;
     a {
 
       margin: 45px 29px 44px 0px;
-      text-align: center;
+      //text-align: center;
       padding: 0 0 8px;
       text-transform: uppercase;
       font-size: 16px;
@@ -51,10 +146,10 @@ header{
 }
 
 .navbar-default .navbar-nav li a:hover {
-  text-align: center;
-  border-bottom: solid 3px #49cbcd;
-  width: 85px;
+
+  border-bottom: solid 3px #4d4d4d;
   text-transform: none;
 
 }
+
 /***********************************/
