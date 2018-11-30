@@ -202,7 +202,8 @@ body {
     background-image: url("../images/footer_bg.png");
     background-position: top left;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-bottom: 12px; }
     body footer .container-fluid .container .row .col-md-12 h2 {
       color: #f0f0f0;
       margin-top: 145px;
