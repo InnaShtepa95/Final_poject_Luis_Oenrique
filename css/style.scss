@@ -29,6 +29,8 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   color: #4d4d4d;
   header {
 
@@ -363,15 +365,36 @@ body {
     }
   }
   footer {
+    position: relative;
     background-image: url("../images/footer_bg.png");
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 12px;
     .container-fluid {
+      p{
+        position: absolute;
+        right: 30px;
+        bottom: 200px;
+        text-align: center;
+        a{
+          margin: 0;
+          padding: 0;
+          width: 28px;
+          display: block;
+          background-color: white;
+          i{
+            font-size: 16px;
+            color: #4a5768;
+            opacity: 0.8;
+            line-height: 28px;
+          }
+        }
+      }
 
       .container {
         .row {
+
           .col-md-12 {
             h2 {
               color: #f0f0f0;
