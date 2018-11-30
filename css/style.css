@@ -96,7 +96,7 @@ body {
     body section .service_info .container-fluid .container .row .col-md-4 .service h5 {
       font-size: 24px;
       font-family: 'AsapMedium'; }
-    body section .service_info .container-fluid .container .row .col-md-4:nth-of-type(2) {
+    body section .service_info .container-fluid .container .row .col-md-4:nth-last-of-type(4) {
       margin-bottom: 100px; }
   body section .skills .container .row .col-md-12 h2 {
     margin-top: 88px;
@@ -112,7 +112,7 @@ body {
     margin-bottom: 125px; }
   body section .portfolio .container-fluid {
     background-color: #f6f6f6; }
-    body section .portfolio .container-fluid .container .row .col-md-12:nth-of-type(5) {
+    body section .portfolio .container-fluid .container .row .col-md-12:last-child {
       margin-bottom: 120px; }
     body section .portfolio .container-fluid .container .row .col-md-12 h2 {
       margin-top: 88px;
@@ -148,25 +148,77 @@ body {
     margin-top: 120px;
     text-transform: uppercase;
     font-size: 46px;
-    font-family: 'AsapBold'; }
+    font-family: 'AsapBold';
+    margin-bottom: 55px; }
     body section .testimonials .container .row .col-md-12 h2:before {
       text-align: center;
       content: "__";
       clear: both; }
-  body section .testimonials .container .row .col-md-12 .owl-carousel .info {
-    box-sizing: border-box;
-    text-transform: uppercase;
-    max-width: 953px;
-    margin: auto;
-    border: solid 1px black; }
-    body section .testimonials .container .row .col-md-12 .owl-carousel .info .photo {
-      float: left;
-      margin-right: 30px; }
-    body section .testimonials .container .row .col-md-12 .owl-carousel .info .description {
-      text-align: left;
-      float: left;
-      max-width: 590px; }
+  body section .testimonials .container .row .col-md-12 .info {
+    max-width: 760px;
+    margin: auto; }
+    body section .testimonials .container .row .col-md-12 .info .description {
+      text-transform: uppercase; }
+      body section .testimonials .container .row .col-md-12 .info .description h3 {
+        font-size: 30px;
+        color: black;
+        text-align: left;
+        font-family: AsapMedium;
+        margin-top: 0; }
+      body section .testimonials .container .row .col-md-12 .info .description h6 {
+        font-size: 12px;
+        font-style: italic;
+        color: black;
+        text-align: left; }
+      body section .testimonials .container .row .col-md-12 .info .description p {
+        text-align: left;
+        font-size: 12px;
+        font-family: AsapRegular;
+        line-height: 32px;
+        margin-bottom: 0; }
 
+/****************************/
+.owl-stage-outer {
+  max-width: 960px;
+  margin: auto; }
+
+.owl-carousel .owl-item img {
+  width: auto;
+  float: left;
+  margin-right: 30px; }
+
+.owl-item.active {
+  max-width: 960px;
+  margin: auto; }
+
+.owl-carousel {
+  border: solid 1px black;
+  padding-top: 55px;
+  max-width: 960px;
+  margin: auto;
+  margin-bottom: 123px; }
+
+.owl-theme .owl-nav {
+  display: none; }
+
+.owl-theme .owl-dots {
+  margin-top: 55px;
+  margin-bottom: 35px; }
+
+.owl-theme .owl-dots .owl-dot span {
+  border-radius: 0;
+  background-color: white;
+  border: solid 1px black;
+  width: 13px;
+  height: 13px; }
+
+.owl-dot .active {
+  background-color: black; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: black; }
+
+/*********************************/
 .navbar-brand {
   padding: 31px 0;
   height: auto; }

@@ -1,38 +1,3 @@
-// function f1() {
-//     alert("привет мой первый js код")
-// }
-
-// $(document).ready(function(){
-//     $('.cart').click(function(){
-//         $(this).toggleClass('open');
-//     })
-// });
-// $(document).ready(function() {
-//     $(".cart").click(function(){
-//         $(".blcok_pay").show().toggleClass('open');
-//     });
-// });
-
-// console.log("hello");
-// alert("привет мой первый js код")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
 
     $('.owl-carousel').owlCarousel({
@@ -42,13 +7,13 @@ $(document).ready(function(){
 
         responsive:{
             0:{
-                items:3
+                items:1
             },
             600:{
-                items:3
+                items:1
             },
             1000:{
-                items:3
+                items:1
             }
         }
     });
