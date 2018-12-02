@@ -27,6 +27,15 @@
   url('../fonts/AsapRegular.ttf') format('truetype'),
   url('../fonts/AsapRegular.svg#AsapRegular') format('svg');
 }
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../fonts/MontserratRegular.eot');
+  src: url('../fonts/MontserratRegular.eot') format('embedded-opentype'),
+  url('../fonts/MontserratRegular.woff2') format('woff2'),
+  url('../fonts/MontserratRegular.woff') format('woff'),
+  url('../fonts/MontserratRegular.ttf') format('truetype'),
+  url('../fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+}
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -554,6 +563,7 @@ footer {
           }
         }
         .col-md-9 {
+          font-family: 'MontserratRegular';
           border-top: solid 1px white;
           margin-bottom: 50px;
           padding-right: 0;
