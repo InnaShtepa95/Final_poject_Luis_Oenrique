@@ -27,6 +27,7 @@
   url('../fonts/AsapRegular.ttf') format('truetype'),
   url('../fonts/AsapRegular.svg#AsapRegular') format('svg');
 }
+
 @font-face {
   font-family: 'MontserratRegular';
   src: url('../fonts/MontserratRegular.eot');
@@ -61,16 +62,19 @@ body {
     .container {
       .row {
         .col-md-6 {
-
+          @include max-screen(1000px) {
+            text-align: center;
+          }
           h1 {
             margin-top: 150px;
             font-size: 90px;
             font-weight: bold;
             font-family: 'AsapMedium';
-            @include max-screen(400px) {
-              margin-top: 80px;
-              font-size: 70px;
+            @include max-screen(1000px) {
+              margin-top: 50px;
+              font-size: 60px;
             }
+
           }
           h3 {
             font-family: 'AsapMedium';
@@ -89,17 +93,18 @@ body {
             font-weight: bold;
             color: #4d4d4d;
             @include max-screen(400px) {
-              padding: 20px;
+              font-size: 14px;
+              padding: 20px 15px 20px 15px;
+
             }
 
             &:nth-child(4) {
               margin-left: 20px;
               padding: 20px 46px;
               @include max-screen(400px) {
-
-              //  margin-left: -15px;
-                padding: 20px ;
+                padding: 20px 30px;
               }
+
             }
             &:hover {
 
@@ -111,12 +116,10 @@ body {
             }
           }
           &:nth-of-type(2) {
-            @include max-screen(650px) {
-              img {
-                margin-top: 15px;
-                width: 75%;
-                height: 75%;
-              }
+            img {
+              margin-top: 15px;
+              width: 100%;
+              height: 100%;
             }
           }
         }
@@ -131,11 +134,17 @@ section {
     .container {
       .row {
         .col-md-6 {
+          @include max-screen(768px) {
+            margin-top: 50px;
+            text-align: center;
+          }
           margin-top: 140px;
           h1 {
+
             font-size: 46px;
             font-family: 'AsapBold';
             &:before {
+              display: block;
               content: "__";
               clear: both;
               margin-left: 5px;
@@ -170,15 +179,16 @@ section {
             }
           }
           &:nth-of-type(2) {
-            margin-top: 110px;
-            margin-bottom: 120px;
-            @include max-screen(650px) {
-              img {
+            img {
 
-                width: 75%;
-                height: 75%;
+              margin-bottom: 120px;
+              @include max-screen(768px) {
+                margin-top: 75px;
+                width: 100%;
+                height: 100%;
               }
             }
+
           }
         }
       }
@@ -196,6 +206,7 @@ section {
               font-size: 46px;
               font-family: 'AsapBold';
               &:before {
+                display: block;
                 text-align: center;
                 content: "__";
                 clear: both;
@@ -204,6 +215,7 @@ section {
             }
           }
           .col-md-4 {
+            margin-bottom: 50px;
             .service {
               a {
                 img {
@@ -216,10 +228,9 @@ section {
                 font-family: 'AsapMedium';
 
               }
+
             }
-            &:nth-last-of-type(4) {
-              margin-bottom: 100px;
-            }
+
           }
         }
       }
@@ -236,22 +247,29 @@ section {
             text-transform: uppercase;
             font-family: 'AsapBold';
             &:before {
+              display: block;
               text-align: center;
               content: "__";
               clear: both;
             }
 
           }
-          &:nth-of-type(2) {
-            margin-bottom: 125px;
-            @include max-screen(1100px) {
-              img {
-                margin-top: 50px;
-                width: 95%;
-                height: 95%;
-              }
-            }
+
+
           }
+        .col-md-12{
+          img{width: 100%;
+
+            height: 100%;
+
+          }
+          text-align: center;
+          margin-bottom: 125px;
+          @include max-screen(992px){
+            margin-bottom: 75px;
+
+          }
+        }
         }
       }
     }
@@ -273,6 +291,7 @@ section {
               text-transform: uppercase;
               font-family: 'AsapBold';
               &:before {
+                display: block;
                 text-align: center;
                 content: "__";
                 clear: both;
@@ -303,7 +322,8 @@ section {
           .col-md-4 {
             img {
               margin-bottom: 30px;
-
+              width: 100%;
+              height: 100%;
 
             }
 
@@ -323,6 +343,7 @@ section {
             font-family: 'AsapBold';
             margin-bottom: 55px;
             &:before {
+              display: block;
               text-align: center;
               content: "__";
               clear: both;
@@ -331,16 +352,24 @@ section {
           }
           .info {
 
+
             max-width: 760px;
             margin: auto;
+
             // border: solid 1px yellow;
             .photo {
-
+              @include max-screen(768px){
+                margin-left: 15px;
+              }
             }
             .description {
+
               text-transform: uppercase;
 
               h3 {
+                @include max-screen(400px){
+                  margin-left: 15px;
+                }
                 font-size: 30px;
                 color: black;
                 text-align: left;
@@ -349,12 +378,18 @@ section {
 
               }
               h6 {
+                @include max-screen(400px){
+                  margin-left: 15px;
+                }
                 font-size: 12px;
                 font-style: italic;
                 color: black;
                 text-align: left;
               }
               p {
+                @include max-screen(768px){
+                  margin-left: 15px;
+                }
                 text-align: left;
                 font-size: 12px;
                 font-family: AsapRegular;
@@ -382,18 +417,7 @@ section {
           bottom: 0;
           .col-md-3 {
             padding-bottom: 62px;
-            &:nth-child(1) {
-              padding-top: 53px;
-            }
-            &:nth-child(2) {
-              padding-top: 73px;
-            }
-            &:nth-child(3) {
-              padding-top: 73px;
-            }
-            &:nth-child(4) {
-              padding-top: 69px;
-            }
+
             .fact {
 
               // border: solid 1px black;
@@ -403,6 +427,7 @@ section {
 
               font-family: AsapRegular;
               img {
+                margin-top: 50px;
               }
               h3 {
                 font-family: AsapMedium
@@ -414,7 +439,6 @@ section {
       }
     }
   }
-}
 
 footer {
   position: relative;
@@ -456,6 +480,7 @@ footer {
             font-size: 46px;
             font-family: 'AsapBold';
             &:before {
+              display: block;
               text-align: center;
               content: "__";
               clear: both;
@@ -563,6 +588,12 @@ footer {
           }
         }
         .col-md-9 {
+          @include max-screen(991px){
+            border-top:none;
+            text-align: center;
+            padding-left: 0;
+            padding-top:0;
+          }
           font-family: 'MontserratRegular';
           border-top: solid 1px white;
           margin-bottom: 50px;
@@ -571,10 +602,6 @@ footer {
           font-size: 16px;
           padding-top: 25px;
           padding-left: 210px;
-          @include max-screen(991px) {
-            border-top: solid 1px transparent;
-          }
-
 
         }
 
