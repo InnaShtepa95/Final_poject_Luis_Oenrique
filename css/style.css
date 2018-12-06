@@ -187,6 +187,15 @@ section .skills .container .row .col-md-12 {
     margin-bottom: 30px;
     width: 100%;
     height: 100%; }
+    @media screen and (max-width: 992px) {
+      .portfolio .container-fluid .container .row .col-md-4 img {
+        height: 225px; } }
+    @media screen and (max-width: 600px) {
+      .portfolio .container-fluid .container .row .col-md-4 img {
+        height: 180px; } }
+    @media screen and (max-width: 400px) {
+      .portfolio .container-fluid .container .row .col-md-4 img {
+        height: 125px; } }
 
 .testimonials .container .row .col-md-12 h2 {
   margin-top: 120px;
@@ -416,6 +425,9 @@ footer {
 .navbar-brand {
   padding: 31px 0;
   height: auto; }
+  @media screen and (max-width: 768px) {
+    .navbar-brand img {
+      margin-left: 15px; } }
 
 .navbar-default {
   background-color: transparent;
@@ -433,6 +445,9 @@ footer {
 
 .navbar-default .navbar-nav li a:hover {
   border-bottom: solid 3px #4d4d4d; }
+
+.navbar-nav {
+  margin: 7.5px 15px; }
 
 /***********************************/
 

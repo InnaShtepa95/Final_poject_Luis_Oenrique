@@ -255,190 +255,208 @@ section {
 
           }
 
-
-          }
-        .col-md-12{
-          img{width: 100%;
+        }
+        .col-md-12 {
+          img {
+            width: 100%;
 
             height: 100%;
 
           }
           text-align: center;
           margin-bottom: 125px;
-          @include max-screen(992px){
+          @include max-screen(992px) {
             margin-bottom: 75px;
 
           }
         }
-        }
       }
     }
   }
-  .portfolio {
-    .container-fluid {
-      background-color: #f6f6f6;
-      .container {
-        .row {
-          .col-md-12 {
-            &:last-child {
-              margin-bottom: 120px;
+}
 
-            }
-            h2 {
-              margin-top: 88px;
-              margin-bottom: 60px;
-              font-size: 46px;
-              text-transform: uppercase;
-              font-family: 'AsapBold';
-              &:before {
-                display: block;
-                text-align: center;
-                content: "__";
-                clear: both;
-              }
-            }
-            a {
-
-              font-size: 16px;
-              line-height: 50px;
-              padding: 20px 47px 20px 46px;
-              border: solid 1px black;
-              text-decoration: none;
-              text-transform: uppercase;
-              font-weight: bold;
-              color: #4d4d4d;
-
-              &:hover {
-
-                border: solid 1px transparent;
-                font-weight: normal;
-                background-color: white;
-                -webkit-box-shadow: 3px 2px 10px 3px #cacaca;
-                box-shadow: 3px 2px 10px 3px #cacaca;
-              }
-            }
-
-          }
-          .col-md-4 {
-            img {
-              margin-bottom: 30px;
-              width: 100%;
-              height: 100%;
-
-            }
-
-          }
-        }
-      }
-    }
-  }
-  .testimonials {
+.portfolio {
+  .container-fluid {
+    background-color: #f6f6f6;
     .container {
       .row {
         .col-md-12 {
+          &:last-child {
+            margin-bottom: 120px;
+
+          }
           h2 {
-            margin-top: 120px;
-            text-transform: uppercase;
+            margin-top: 88px;
+            margin-bottom: 60px;
             font-size: 46px;
+            text-transform: uppercase;
             font-family: 'AsapBold';
-            margin-bottom: 55px;
             &:before {
               display: block;
               text-align: center;
               content: "__";
               clear: both;
             }
+          }
+          a {
+
+            font-size: 16px;
+            line-height: 50px;
+            padding: 20px 47px 20px 46px;
+            border: solid 1px black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #4d4d4d;
+
+            &:hover {
+
+              border: solid 1px transparent;
+              font-weight: normal;
+              background-color: white;
+              -webkit-box-shadow: 3px 2px 10px 3px #cacaca;
+              box-shadow: 3px 2px 10px 3px #cacaca;
+            }
+          }
+
+        }
+        .col-md-4 {
+
+          img {
+            margin-bottom: 30px;
+            width: 100%;
+            height: 100%;
+            @include max-screen(992px) {
+
+              height: 225px;
+
+            }
+            @include max-screen(600px) {
+
+              height: 180px;
+
+            }
+            @include max-screen(400px) {
+
+              height: 125px;
+
+            }
 
           }
-          .info {
 
+        }
+      }
+    }
+  }
+}
 
-            max-width: 760px;
-            margin: auto;
+.testimonials {
+  .container {
+    .row {
+      .col-md-12 {
+        h2 {
+          margin-top: 120px;
+          text-transform: uppercase;
+          font-size: 46px;
+          font-family: 'AsapBold';
+          margin-bottom: 55px;
+          &:before {
+            display: block;
+            text-align: center;
+            content: "__";
+            clear: both;
+          }
 
-            // border: solid 1px yellow;
-            .photo {
-              @include max-screen(768px){
+        }
+        .info {
+
+          max-width: 760px;
+          margin: auto;
+
+          // border: solid 1px yellow;
+          .photo {
+            @include max-screen(768px) {
+              margin-left: 15px;
+            }
+          }
+          .description {
+
+            text-transform: uppercase;
+
+            h3 {
+              @include max-screen(400px) {
                 margin-left: 15px;
               }
+              font-size: 30px;
+              color: black;
+              text-align: left;
+              font-family: AsapMedium;
+              margin-top: 0;
+
             }
-            .description {
-
-              text-transform: uppercase;
-
-              h3 {
-                @include max-screen(400px){
-                  margin-left: 15px;
-                }
-                font-size: 30px;
-                color: black;
-                text-align: left;
-                font-family: AsapMedium;
-                margin-top: 0;
-
+            h6 {
+              @include max-screen(400px) {
+                margin-left: 15px;
               }
-              h6 {
-                @include max-screen(400px){
-                  margin-left: 15px;
-                }
-                font-size: 12px;
-                font-style: italic;
-                color: black;
-                text-align: left;
-              }
-              p {
-                @include max-screen(768px){
-                  margin-left: 15px;
-                }
-                text-align: left;
-                font-size: 12px;
-                font-family: AsapRegular;
-                line-height: 32px;
-                margin-bottom: 0;
-
-              }
+              font-size: 12px;
+              font-style: italic;
+              color: black;
+              text-align: left;
             }
-
-          }
-
-        }
-      }
-
-    }
-  }
-  .fanfact {
-    .container-fluid {
-      background-color: #f6f6f6;
-      margin-bottom: 154px;
-
-      .container {
-        .row {
-          //border: solid 1px black;
-          bottom: 0;
-          .col-md-3 {
-            padding-bottom: 62px;
-
-            .fact {
-
-              // border: solid 1px black;
-
-              text-transform: uppercase;
-              vertical-align: bottom;
-
+            p {
+              @include max-screen(768px) {
+                margin-left: 15px;
+              }
+              text-align: left;
+              font-size: 12px;
               font-family: AsapRegular;
-              img {
-                margin-top: 50px;
-              }
-              h3 {
-                font-family: AsapMedium
-              }
+              line-height: 32px;
+              margin-bottom: 0;
 
             }
+          }
+
+        }
+
+      }
+    }
+
+  }
+}
+
+.fanfact {
+  .container-fluid {
+    background-color: #f6f6f6;
+    margin-bottom: 154px;
+
+    .container {
+      .row {
+        //border: solid 1px black;
+        bottom: 0;
+        .col-md-3 {
+          padding-bottom: 62px;
+
+          .fact {
+
+            // border: solid 1px black;
+
+            text-transform: uppercase;
+            vertical-align: bottom;
+
+            font-family: AsapRegular;
+            img {
+              margin-top: 50px;
+            }
+            h3 {
+              font-family: AsapMedium
+            }
+
           }
         }
       }
     }
   }
+}
 
 footer {
   position: relative;
@@ -588,11 +606,11 @@ footer {
           }
         }
         .col-md-9 {
-          @include max-screen(991px){
-            border-top:none;
+          @include max-screen(991px) {
+            border-top: none;
             text-align: center;
             padding-left: 0;
-            padding-top:0;
+            padding-top: 0;
           }
           font-family: 'MontserratRegular';
           border-top: solid 1px white;
@@ -680,6 +698,11 @@ footer {
 .navbar-brand {
   padding: 31px 0;
   height: auto;
+  img {
+    @include max-screen(768px) {
+      margin-left: 15px;
+    }
+  }
 }
 
 .navbar-default {
@@ -712,6 +735,10 @@ footer {
   border-bottom: solid 3px #4d4d4d;
   // text-transform: none;
 
+}
+
+.navbar-nav {
+  margin: 7.5px 15px;
 }
 
 /***********************************/
